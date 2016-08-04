@@ -5,9 +5,8 @@ Cake AddIn that extends Cake with HipChat messaging features
 
 ## Usage
 
-### Post message
+This version of the AddIn requires you use a v1 API token
 
-### Using token
 ```csharp
 #addin "Cake.HipChat"
 
