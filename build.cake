@@ -1,3 +1,5 @@
+#addin "Cake.HipChat"
+
 ///////////////////////////////////////////////////////////////////////////////
 // ARGUMENTS
 ///////////////////////////////////////////////////////////////////////////////
@@ -8,6 +10,11 @@ var configuration   = Argument<string>("configuration", "Release");
 ///////////////////////////////////////////////////////////////////////////////
 // GLOBAL VARIABLES
 ///////////////////////////////////////////////////////////////////////////////
+
+var authToken = EnvironmentVariable("HIPCHAT_AUTH_TOKEN");	
+var roomId = EnvironmentVariable("HIPCHAT_ROOM_ID");
+var senderName = EnvironmentVariable("HIPCHAT_SENDER_NAME");
+
 var isLocalBuild        = !AppVeyor.IsRunningOnAppVeyor;
 var isPullRequest       = AppVeyor.Environment.PullRequest.IsPullRequest;
 var solutions           = GetFiles("./**/*.sln");
@@ -41,13 +48,15 @@ var nuGetPackSettings   = new NuGetPackSettings {
                                 Copyright               = assemblyInfo.Copyright,
                                 ReleaseNotes            = releaseNotes.Notes.ToArray(),
                                 Tags                    = new [] {"Cake", "Script", "Build", "HipChat"},
+								IncludeReferencedProjects = true,
                                 RequireLicenseAcceptance= false,
                                 Symbols                 = false,
                                 NoPackageAnalysis       = true,
                                 Files                   = new [] {
                                                                     new NuSpecContent {Source = "Cake.HipChat.dll"},
                                                                     new NuSpecContent {Source = "Cake.HipChat.pdb"},
-                                                                    new NuSpecContent {Source = "Cake.HipChat.xml"}
+                                                                    new NuSpecContent {Source = "Cake.HipChat.xml"},
+																	new NuSpecContent {Source = "HipChat.Net.dll"},
                                                                  },
                                 BasePath                = binDir,
                                 OutputDirectory         = nugetRoot
@@ -75,6 +84,12 @@ Setup(context =>
                             );
 
     Information(buildStartMessage);
+	
+	if (!string.IsNullOrEmpty(authToken))
+	{
+		SendMessage(authToken, roomId, senderName, buildStartMessage);
+	}
+
 });
 
 Teardown(context =>

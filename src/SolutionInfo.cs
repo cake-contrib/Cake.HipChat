@@ -8,9 +8,9 @@ using System;
 
 [assembly: AssemblyCompany("scene316")]
 [assembly: AssemblyProduct("Cake.HipChat")]
-[assembly: AssemblyVersion("0.0.1")]
-[assembly: AssemblyFileVersion("0.0.1")]
-[assembly: AssemblyInformationalVersion("0.0.1")]
+[assembly: AssemblyVersion("0.0.2")]
+[assembly: AssemblyFileVersion("0.0.2")]
+[assembly: AssemblyInformationalVersion("0.0.2")]
 [assembly: AssemblyCopyright("Copyright � scene316 2016")]
 [assembly: CLSCompliant(true)]
 
