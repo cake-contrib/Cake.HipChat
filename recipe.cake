@@ -8,7 +8,8 @@ BuildParameters.SetParameters(context: Context,
                             title: "Cake.HipChat",
                             repositoryOwner: "cake-contrib",
                             repositoryName: "Cake.HipChat",
-                            appVeyorAccountName: "cakecontrib");
+                            appVeyorAccountName: "cakecontrib",
+                            shouldRunGitversion: true);
 
 BuildParameters.PrintParameters(Context);
 
