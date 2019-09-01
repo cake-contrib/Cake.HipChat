@@ -1,18 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<link rel="self" href="http://cake-contrib.github.io/Cake.HipChat" />
 	<id>http://cake-contrib.github.io/Cake.HipChat</id>
-	<title />
-	<rights>2017</rights>
-	<updated>2017-04-15T13:49:33Z</updated>
+	<title>Cake.HipChat</title>
+	<link rel="self" href="http://cake-contrib.github.io/Cake.HipChat" />
+	<rights>2019</rights>
+	<updated>2019-09-01T21:01:57Z</updated>
 	<entry>
+		<id>http://cake-contrib.github.io/Cake.HipChat/blog/new-release-0.1.0</id>
+		<title>New Release - 0.1.0</title>
 		<author>
 			<name>gep13</name>
 		</author>
 		<link href="http://cake-contrib.github.io/Cake.HipChat/blog/new-release-0.1.0" />
-		<id>http://cake-contrib.github.io/Cake.HipChat/blog/new-release-0.1.0</id>
-		<title>New Release - 0.1.0</title>
 		<updated>2017-04-02T00:00:00Z</updated>
+		<content>&lt;h1 id="release"&gt;0.1.0 Release&lt;/h1&gt;
+&lt;p&gt;We are happy to announnce the 0.1.0 release of the Cake.HipChat Addin for Cake.&lt;/p&gt;
+&lt;p&gt;In this release, the following issues have been resolved:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bug&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.HipChat/issues/3"&gt;&lt;strong&gt;#3&lt;/strong&gt;&lt;/a&gt; Add lib folder structure to NuGet package&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Improvements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.HipChat/issues/6"&gt;&lt;strong&gt;#6&lt;/strong&gt;&lt;/a&gt; Convert this repo to use Cake.Recipe&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.HipChat/issues/2"&gt;&lt;strong&gt;#2&lt;/strong&gt;&lt;/a&gt; Update nuspec information to reflect new Repo location&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Documentation&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.HipChat/issues/7"&gt;&lt;strong&gt;#7&lt;/strong&gt;&lt;/a&gt; Add Wyam Documentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please do not hesitate to reach out in the &lt;a href="https://gitter.im/cake-contrib/Lobby"&gt;Gitter Channel&lt;/a&gt; if you have any issues using this addin.&lt;/p&gt;
+</content>
 		<summary>&lt;p&gt;We are happy to announnce the 0.1.0 release of the Cake.HipChat Addin for Cake.&lt;/p&gt;</summary>
 	</entry>
 </feed>
