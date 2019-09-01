@@ -7,8 +7,9 @@
     <owners>scene316, cake-contrib</owners>
     <description>Cake HipChat AddIn</description>
     <summary>Cake AddIn that extends Cake with HipChat messaging features.</summary>
-    <licenseUrl>https://github.com/cake-contrib/Cake.HipChat/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/cake-contrib/Cake.HipChat/</projectUrl>
+    <license type="expression">MIT</license>
+    <repository type="git" url="https://github.com/cake-contrib/Cake.HipChat.git"/>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright>Copyright (c) Cake Contributions 2017 - Present</copyright>
     <tags>Cake, Script, Build, HipChat, Addin</tags>
