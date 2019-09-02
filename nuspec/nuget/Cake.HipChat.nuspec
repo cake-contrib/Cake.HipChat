@@ -16,8 +16,8 @@
     <tags>Cake, Script, Build, HipChat, Addin</tags>
   </metadata>
   <files>
-    <file src="Cake.HipChat.dll" target="lib\net45" />
-    <file src="Cake.HipChat.pdb" target="lib\net45" />
-    <file src="Cake.HipChat.xml" target="lib\net45" />
+    <file src="Cake.HipChat.dll" target="lib\net461" />
+    <file src="Cake.HipChat.pdb" target="lib\net461" />
+    <file src="Cake.HipChat.xml" target="lib\net461" />
   </files>
 </package>
